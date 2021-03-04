@@ -1,4 +1,19 @@
-.title {
-    margin: auto;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    min-height: 40rem;
+    background-color: blue;
+}
+
+.header__title {
     font-size: 1rem;
+    color: #fff;
+}
+
+.header__description {
+    font-size: 1rem;
+    color: #ddd;
 }
