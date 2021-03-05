@@ -30,6 +30,7 @@ header {
     flex-direction: column;
     justify-content: center;
     padding: 7%;
+
 }
 
 .header__title {
@@ -49,7 +50,7 @@ header {
 .header__description {
     margin-top: 2%;
     font-size: 1.25rem;
-    color: #ddd;
+    color: #bbb;
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.9s ease;
@@ -58,4 +59,33 @@ header {
 .slide {
     opacity: 1;
     transform: translateY(0px);
+}
+
+#paintings {
+    padding-top: 150px;
+}
+
+#container__title {
+    font-size: 4rem;
+    color: #bbb;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 200px;
+    grid-row-gap: 200px;
+    border: 1px solid red;
+    width: 60%;
+    margin: auto;
+}
+
+.container .item {
+    place-self: center;
+}
+
+.item > img {
+    max-width: 100%;
 }
