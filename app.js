@@ -32,18 +32,24 @@ function slideAndShow(text) {
 }
 
 const modal = document.querySelector('.modal');
-const previews = document.querySelectorAll('.item');
+const previews = document.querySelectorAll('.container img');
 const original = document.querySelector('.modal__image');
 const caption = document.querySelector('.modal__description');
 
 previews.forEach((preview) => {
     preview.addEventListener('click', () => {
         modal.classList.add('open');
+        original.classList.add('open');
+        const originalImage = preview.getAttribute('data-original');
+        original.src = `./images/${originalImage}`;
+        const prevAlt = preview.alt;
+        caption.textContent = prevAlt;
     });
 });
 
 modal.addEventListener('click', (e) => {
     if(e.target.classList.contains('modal')) {
         modal.classList.remove('open');
+        original.classList.remove('open');
     }
 })
