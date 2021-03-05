@@ -10,7 +10,7 @@
 
     <nav>
         <a href="#header">About</a>
-        <a href="#paintings" onclick="slideAndShow(document.querySelector('.container__description'))">Paintings</a>
+        <a href="#paintings">Paintings</a>
         <a href="#contact">Contact</a>
     </nav>
     
@@ -24,7 +24,7 @@
 
     <div id="paintings">
         <h2 id="container__title">My paintings</h2>
-        <p class="header__description container__description">You can click on the miniature to see the painting and read its description.</p>
+        <p class="container__description">You can click on the miniature to see the painting and read its description.</p>
         <div class="container">
             <div class="item">
                 <img src="./images/first.jpg" />
@@ -52,10 +52,9 @@
             </div>
         </div>
     </div>
-
-    <div id="contact">
-        
-
+    <div class="modal">
+        <img scr="" class="modal__image" />
+        <p class="modal__description">text</p>
     </div>
 
     <script src="app.js"></script>
