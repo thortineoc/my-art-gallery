@@ -26,7 +26,10 @@ nav > a {
 
 header {
     min-height: 20rem;
-    background-color: rgb(51, 8, 44);
+    background-image: url(./images/header_image.jpg);
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +142,7 @@ header {
 }
 
 footer {
-    background-color: #555;
+    background-color: #111;
     color: #ddd;
     padding: 1%;
 }
