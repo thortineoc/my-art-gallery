@@ -30,3 +30,20 @@ function clear() {
 function slideAndShow(text) {
     text.classList.add('slide');
 }
+
+const modal = document.querySelector('.modal');
+const previews = document.querySelectorAll('.item');
+const original = document.querySelector('.modal__image');
+const caption = document.querySelector('.modal__description');
+
+previews.forEach((preview) => {
+    preview.addEventListener('click', () => {
+        modal.classList.add('open');
+    });
+});
+
+modal.addEventListener('click', (e) => {
+    if(e.target.classList.contains('modal')) {
+        modal.classList.remove('open');
+    }
+})
