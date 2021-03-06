@@ -69,9 +69,10 @@ header {
     padding-bottom: 8.5%;
 }
 
-#container__title {
+.container__title {
+    font-weight: bolder;
     font-size: 4rem;
-    color: #bbb;
+    color: #888;
     text-align: center;
 }
 
@@ -99,7 +100,7 @@ header {
 .item > img {
     max-width: 100%;
     cursor: pointer;
-    transform: scale(1);
+    transform: scale(1g);
     transition: all 0.25s ease;
 }
 
@@ -146,6 +147,37 @@ header {
 
 .modal__image.open {
     transform: translate(-50%, -50%) scale(1);
+}
+
+form {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2%;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+form div label {
+    color: #111;
+}
+
+form div input, form div textarea {
+    border: none;
+    background-color: #888;
+    color: #fff;
+    padding: 5%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+form button {
+    max-width: 20%;
 }
 
 footer {

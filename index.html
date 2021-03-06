@@ -23,7 +23,7 @@
     </header>
 
     <div id="paintings">
-        <h2 id="container__title">My paintings</h2>
+        <h2 class="container__title">My paintings</h2>
         <p class="container__description" >Acrylics on canvas</p>
         <p class="container__description">You can click on the miniature to look at the painting and read its description</p>
         <div class="container">
@@ -50,6 +50,26 @@
             <img src="./images/sec.jpg" alt="" class="modal__image" />
             <p class="modal__description">text</p>
         </div>
+    </div>
+
+    <div class="contact">
+        <h2 class="container__title">Contact</h2>
+        <p class="container__description">You can write to me if you would like me to make a painting for you or get some information</p>
+        <form>
+            <div class="field">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" /> 
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div class="field">
+                <label>Message</label>
+                <textarea placeholder="Write your message..."></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
     </div>
 
     <footer>
