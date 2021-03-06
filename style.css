@@ -26,7 +26,7 @@ nav > a {
 
 header {
     min-height: 20rem;
-    background-image: url(./images/header_image.jpg);
+    background-image: url(./images/header_image.png);
     background-color: #111;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,6 @@ header {
     flex-direction: column;
     justify-content: center;
     padding: 7%;
-
 }
 
 .header__title {
@@ -66,7 +65,8 @@ header {
 }
 
 #paintings {
-    padding-top: 150px;
+    padding-top: 8.5%;
+    padding-bottom: 8.5%;
 }
 
 #container__title {
