@@ -178,6 +178,11 @@ form div input, form div textarea {
 
 form button {
     max-width: 20%;
+    margin: 5%;
+    padding: 1%;
+    border-radius: 5px;
+    background: #fff;
+    color: #111;
 }
 
 footer {
