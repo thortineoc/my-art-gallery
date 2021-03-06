@@ -87,7 +87,6 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-column-gap: 200px;
     grid-row-gap: 200px;
-    border: 1px solid red;
     width: 60%;
     margin: auto;
 }
