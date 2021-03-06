@@ -100,7 +100,7 @@ header {
 .item > img {
     max-width: 100%;
     cursor: pointer;
-    transform: scale(1g);
+    transform: scale(1);
     transition: all 0.25s ease;
 }
 
@@ -129,7 +129,7 @@ header {
 
 .modal p {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2vw;
     position: absolute;
     bottom: 5%;
     left: 50%;
@@ -193,4 +193,38 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    form {
+        width: 50%;
+    }
+    .modal p {
+        font-size: 3vw;
+        bottom: 2%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    .item > img {
+        max-width: 200px;
+    }
+    .modal p {
+        font-size: 4vw;
+        bottom: 2%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+    }
+    .modal__image {
+        width: 100%;
+        height: auto;
+    }
 }
