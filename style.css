@@ -150,11 +150,12 @@ header {
 }
 
 form {
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
 
 form div {
@@ -172,7 +173,6 @@ form div input, form div textarea {
     background-color: #888;
     color: #fff;
     padding: 5%;
-    font-size: 0.8rem;
     border-radius: 5px;
 }
 
@@ -200,7 +200,7 @@ footer p {
         width: 100%;
     }
     form {
-        width: 50%;
+        width: 30%;
     }
     .modal p {
         font-size: 3vw;
