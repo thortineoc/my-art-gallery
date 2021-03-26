@@ -85,7 +85,7 @@ header {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-column-gap: 200px;
     grid-row-gap: 200px;
     width: 60%;
@@ -195,18 +195,30 @@ footer p {
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
+@media (max-width: 1000px) {
     form {
         width: 30%;
     }
     .modal p {
         font-size: 3vw;
-        bottom: 2%;
+        bottom: 4%;
         left: 50%;
-        transform: translate(-50%, -5%);
+        transform: translate(-50%, -4%);
+    }
+}
+
+@media (max-width: 650px) {
+    form {
+        width: 45%;
+    }
+    .modal__image {
+        width: 80%;
+        height: auto;
+    }
+    .modal p {
+        font-size: 3vw;
+        bottom: 10%;
+        transform: translate(-50%, -10%);
     }
 }
 
@@ -219,12 +231,10 @@ footer p {
     }
     .modal p {
         font-size: 4vw;
-        bottom: 2%;
-        left: 50%;
-        transform: translate(-50%, -5%);
+        bottom: 15%;
+        transform: translate(-50%, -15%);
     }
-    .modal__image {
-        width: 100%;
-        height: auto;
+    form button {
+        max-width: 28%;
     }
 }
